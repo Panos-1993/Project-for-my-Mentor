@@ -1,0 +1,17 @@
+body {background-color: powderblue;}
+h2 { margin-top: 50px;
+margin-bottom: 50px;
+margin-right: 100px;
+margin-left: 100px;}
+
+    /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
