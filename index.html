@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="calc.js"></script>
-    <title>Master</title>
+    <title>Index</title>
 </head>
 <body>
   <header>
@@ -25,19 +25,23 @@
       <p class="text-center">This exercise is an attempt to develope my skills and hopefuly land my dream job. Profitability is a measure of an organization's profit relative to its expenses. Organizations that are more efficient will realize more profit as a percentage of its expenses than a less-efficient organization, which must spend more to generate the same profit.</p>
     </div>
   </header>
-  <div class="container mt-2">
-    <h2>CapitalGearing</h2>
-    <p>Capital gearing is a British term that refers to the amount of debt a company has relative to its equity. In the United States, capital gearing is known as "financial leverage."</p>
-    <div class="col-12">
-      <div class="row">
-          <div class="col-3"><h5>Non-Current liabilities</h5></div>
-          <div class="col-3"><h5>OrdinaryShareHoldersFund(Equity)</h5></div>
-          <div class="col-3"><h5>Result</h5></div>
+
+  <div class="container px-4 py-5" id="featured-2">
+    <h2 class="pb-2 border-bottom">Risk</h2>
+  <div class="feature col">
+    <div class="card">
+        <h2 class="card-title">Capital Gearing</h2>
+    <p class="card-text">Capital gearing is a British term that refers to the amount of debt a company has relative to its equity. In the United States, capital gearing is known as "financial leverage."</p>
+    <div>
+      <div class="container-fluid">
+          <div><h5>Non-Current liabilities</h5></div>
+          <div><h5>OrdinaryShareHoldersFund(Equity)</h5></div>
+          <div><h5>Result</h5></div>
       </div>
-    <div class="row">
-      <div class="col-3"><input type="number" id="Non-Current liabilities"></div>
-      <div class="col-3"><input type="number" id="Equity"></div>
-      <div class="col-3">
+    <div class="container-fluid">
+      <div><input type="number" id="Non-Current liabilities"></div>
+      <div><input type="number" id="Equity"></div>
+      <div>
         <div id="input-wrap">
             <p id="resultCapitalGearing">0</p>
   </div>
@@ -63,3 +67,40 @@ wage.addEventListener("keydown", function (e) {
     }
   });
   </script> 
+  </div>
+  <div class="card-group">
+    <div class="card">
+        <h2 class="card-title">Interest Cover</h2>
+    <p class="card-text">The interest coverage ratio is a debt and profitability ratio used to determine how easily a company can pay interest on its outstanding debt. The interest coverage ratio is calculated by dividing a company's earnings before interest and taxes (EBIT) by its interest expense during a given period.</p>
+    <div>
+        <div>
+            <div><h5>OperatingProfit</h5></div>
+            <div><h5>FinanceCost</h5></div>
+        </div>
+      <div>
+        <div><input type="number" id="OperatingProfit"></div>
+        <div><input type="number" id="FinanceCost"></div>
+        <div><p id="resultInterestCover">0</p></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function myFunctionInterestCover() {
+    var x7, x8;
+    x7 = document.getElementById("OperatingProfit").value;
+    x8 = document.getElementById("FinanceCost").value;
+    console.log(x7 + x8);
+        var result = (Number(x7) / Number(x8));
+    console.log(result);
+    document.getElementById("resultInterestCover").innerHTML = result;
+  return result;
+}
+var wage = document.getElementById("FinanceCost");
+wage.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
+        myFunctionInterestCover();
+    }
+  });
+  </script> 
+  </div>
+</div>
