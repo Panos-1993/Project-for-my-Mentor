@@ -12,19 +12,23 @@
 </head>
 <body>
   <header>
-    <div class="fluid-container">
-      <h1 class="text-center">About the Project</h1>
-      <div class="fluit-container text-center">
-        <ul style="list-style: none;">
-          <li><a class="btn" target="#">Profitability</a></li>
-          <li><a class="btn" target="_self" href="#featured-2">Risk</a></li>
-          <li><button class="btn" target="#">Liquidity</button></li>
-          <li><button class="btn" target="#">Activity</button></li>
-        </ul>
-      </div>
-      <p class="text-center">This exercise is an attempt to develope my skills and hopefuly land my dream job. Profitability is a measure of an organization's profit relative to its expenses. Organizations that are more efficient will realize more profit as a percentage of its expenses than a less-efficient organization, which must spend more to generate the same profit.</p>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+        <a class="navbar-brand" href="#">Personal Project</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="#">Home</a>
+              <a class="nav-item nav-link" href="#">Profitability</a>
+              <a class="nav-item nav-link" href="#">Risk</a>
+              <a class="nav-item nav-link" href="#">Liquidity</a>
+              <a class="nav-item nav-link" href="#">Activity</a>
+            </div>
+          </div>
+    </nav>
   </header>
+<main>
 <!-- Make nested items for the div class container for the two risk functions and make them into a dropdown menu -->
   <div class="container px-4 py-5" id="featured-2">
     <h2 class="pb-2 border-bottom">Risk</h2>
@@ -104,3 +108,12 @@ wage.addEventListener("keydown", function (e) {
   </script> 
   </div>
 </div>
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <div class="col-md-4 d-flex align-items-center">
+    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+      <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+    </a>
+    <span class="text-muted">© 2022 Panagiotis Lampros</span>
+  </div>
+</footer>
+</main>
