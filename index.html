@@ -35,19 +35,21 @@
   <div class="feature col">
     <div class="card">
         <h2 class="card-title">Capital Gearing</h2>
-    <p class="card-text">Capital gearing is a British term that refers to the amount of debt a company has relative to its equity. In the United States, capital gearing is known as "financial leverage."</p>
-    <div>
-      <div class="container-fluid">
-          <div><h5>Non-Current liabilities</h5></div>
-          <div><h5>OrdinaryShareHoldersFund(Equity)</h5></div>
-          <div><h5>Result</h5></div>
+    <p class="card-text justify-content-center">Capital gearing is a British term that refers to the amount of debt a company has relative to its equity. In the United States, capital gearing is known as "financial leverage."</p>
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+          <ol style="list-style: none;">
+            <li>Non-Current liabilities</li>
+            <li>OrdinaryShareHoldersFund(Equity)</li>
+            <li>Result</li>
+          </ol>
       </div>
-    <div class="container-fluid">
+    <div class="col-md-6 mx-auto">
       <div><input type="number" id="Non-Current liabilities"></div>
       <div><input type="number" id="Equity"></div>
       <div>
-        <div id="input-wrap">
-            <p id="resultCapitalGearing">0</p>
+        <div class="col-md-6 mx-auto">
+            <div style="border: solid" id="resultCapitalGearing">0</div>
   </div>
 </div>
 </div>
@@ -108,6 +110,7 @@ wage.addEventListener("keydown", function (e) {
   </script> 
   </div>
 </div>
+<!-- Insert the next divs-->
 </body>
 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
   <div class="col-md-4 d-flex align-items-center">
