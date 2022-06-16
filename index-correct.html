@@ -27,25 +27,29 @@
           </div>
     </nav>
   </header>
+<br>
+<br>
 <main class="h-100">
 <div class="col-12">
   <div class="container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 d-flex align-items-stretch">
                 <div class="card-group">
-                  <div class="card">
+                  <div class="card mx-auto">
                     <h2 class="card-title">Capital Gearing</h2>
                       <p class="card-text">Capital gearing is a British term that refers to the amount of debt a company has relative to its equity. In the United States, capital gearing is known as "financial leverage."</p>
-                        <div>
+                        <div class="row">
+                          <div class="col-4">
                           <div><h5>Non-Current liabilities</h5></div>
-                          <div><h5>OrdinaryShareHoldersFund(Equity)</h5></div>
+                          <div><h5>Equity</h5></div>
                           <div><h5>Result</h5></div>
-                        </div>
-                          <div>
+                          </div>
+                          <div class="col-2">
                             <div><input type="number" id="Non-Current liabilities"></div>
                             <div><input type="number" id="Equity"></div>
                             <div><p id="resultCapitalGearing">0</p></div>
                           </div>
+                        </div>
                   </div>
                       <script>
                                           function myFunctionCapitalGearing() {
@@ -69,15 +73,16 @@
             </div>
             <div class="col-6">
                 <div class="card-group">
-                    <div class="card">
+                    <div class="card mx-auto">
                         <h2 class="card-title">Interest Cover</h2>
                     <p class="card-text">The interest coverage ratio is a debt and profitability ratio used to determine how easily a company can pay interest on its outstanding debt. The interest coverage ratio is calculated by dividing a company's earnings before interest and taxes (EBIT) by its interest expense during a given period.</p>
-                    <div>
-                        <div>
+                    <div class="row">
+                        <div class="col-4">
                             <div><h5>OperatingProfit</h5></div>
                             <div><h5>FinanceCost</h5></div>
+                            <div><h5>Result</h5></div>
                         </div>
-                      <div>
+                      <div class="col-2">
                         <div><input type="number" id="OperatingProfit"></div>
                         <div><input type="number" id="FinanceCost"></div>
                         <div><p id="resultInterestCover">0</p></div>
@@ -108,19 +113,19 @@
   </div>
   <div class="container">
       <div class="row">
-          <div class="col-6">
+          <div class="col-6 d-flex align-items-stretch">
               <div class="card-group">
-                <div class="card">
+                <div class="card mx-auto">
                   <h2 class="card-title">Quick Ratio</h2>
                     <p class="card-text">The quick ratio is an indicator of a company’s short-term liquidity position and measures a company’s ability to meet its short-term obligations with its most liquid assets.</p>
                       <div class="row">
-                        <div class="col-3">
+                        <div class="col-4">
                           <div><h5>Current Assets</h5></div>
                           <div><h5>Inventory</h5></div>
                           <div><h5>Current Liabilities</h5></div>
                           <div><h5>Result</h5></div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-4">
                             <div><input type="number" id="Current Assets"></div>
                             <div><input type="number" id="Equity"></div>
                             <div><input type="number" id="Current Liabilities"></div>
@@ -152,7 +157,7 @@
           </div>
           <div class="col-6">
               <div class="card-group">
-                  <div class="card">
+                  <div class="card mx-auto">
                       <h2 class="card-title">Current Ratio</h2>
                         <p class="card-text">The current ratio is a liquidity ratio that measures a company’s ability to pay short-term obligations or those due within one year. It tells investors and analysts how a company can maximize the current assets on its balance sheet to satisfy its current debt and other payables.</p>
                   <div class="row">
