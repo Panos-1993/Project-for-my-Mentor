@@ -366,23 +366,23 @@
                     <div class="border border-3"><h5>Result</h5></div>
                   </div>
                   <div class="col-6">
-                    <div class="border border-3"><input type="number" id="Payables"></div>
-                    <div class="border border-3"><input type="number" id="Credit Purchases"></div>
-                    <div><p class="d-flex justify-content-center" id="resultPayableDays">0</p></div>
+                    <div class="border border-3"><input type="number" id="PayablesPayablesDays"></div>
+                    <div class="border border-3"><input type="number" id="CreditPurchasesPayablesDays"></div>
+                    <div><p class="d-flex justify-content-center" id="resultDaysPayable">0</p></div>
                   </div>
                 </div>
                 <script>
                 function myFunctionPayableDays() {
                 var x11, x12;
-                x11 = document.getElementById("Payables").value;
-                x12 = document.getElementById("Credit Purchases").value;
+                x11 = document.getElementById("PayablesPayablesDays").value;
+                x12 = document.getElementById("CreditPurchasesPayablesDays").value;
                 onsole.log(x11 + x12);
                 var result = (Number(x11) / Number(x12)) * 365;
                 console.log(result);
-                document.getElementById("resultPayableDays").innerHTML = result;
+                document.getElementById("resultDaysPayable").innerHTML = result;
                 return result;
                 }
-                var wage = document.getElementById("CreditPurchases");
+                var wage = document.getElementById("CreditPurchasesPayablesDays");
                 wage.addEventListener("keydown", function (e) {
                 if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
                 myFunctionPayableDays();
@@ -395,7 +395,7 @@
               <div class="col 4 d-flex align-items-stretch">
                 <div class="card-group">
                   <div class="card mx-auto">
-                    <h2 class="card-title">Reiceivables Days</h2>
+                    <h2 class="card-title">Receivables Days</h2>
                     <p class="card-text">The term receivables turnover ratio refers to an accounting measure that quantifies a company's effectiveness in collecting its accounts receivable. This ratio measures how well a company uses and manages the credit it extends to customers and how quickly that short-term debt is collected or is paid.</p>
                     <div class="row">
                       <div class="col-6">
@@ -405,7 +405,7 @@
                       </div>
                       <div class="col-6">
                         <div class="border border-3"><input type="number" id="Receivables"></div>
-                        <div class="border border-3"><input type="number" id="Credit Sales"></div>
+                        <div class="border border-3"><input type="number" id="CreditSalesReceivables"></div>
                         <div><p class="d-flex justify-content-center" id="resultReceivablesDays">0</p></div>
                       </div>
                     </div>
@@ -413,14 +413,14 @@
                     function myFunctionReceivablesDays() {
                     var x13, x14;
                     x13 = document.getElementById("Receivables").value;
-                    x14 = document.getElementById("Credit Sales").value;
+                    x14 = document.getElementById("CreditSalesReceivables").value;
                     console.log(x13 + x14);
                     var result = (Number(x13) / Number(x14)) * 365;
                     console.log(result);
                     document.getElementById("resultReceivablesDays").innerHTML = result;
                     return result;
                     }
-                    var wage = document.getElementById("CreditSales");
+                    var wage = document.getElementById("CreditSalesReceivables");
                     wage.addEventListener("keydown", function (e) {
                     if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
                     myFunctionReceivablesDays();
@@ -431,7 +431,7 @@
                     </div>
                   </div>      
         </div>
-</div>
+  </div>
   </div>
 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     <div class="col-md-4 d-flex align-items-center">
