@@ -16,8 +16,42 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 .container {
-  padding: 10px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
 }
 .card {
   position: static;
+}
+#Risk {
+  text-align: center;
+  padding: auto;
+  justify-content: center;
+  border: 5px;
+  border-color: black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3); 
+}
+#Profitability {
+  text-align: center;
+  padding: auto;
+  justify-content: center;
+  border: 5px;
+  border-color: black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3); 
+}
+#Liquidity {
+  text-align: center;
+  padding: auto;
+  justify-content: center;
+  border: 5px;
+  border-color: black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3); 
+}
+#CapitalGearing {
+  text-align: center;
+  justify-content: center;
 }
