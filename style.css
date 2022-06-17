@@ -15,6 +15,7 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+/*
 .container {
   padding-top: 5px;
   padding-right: 5px;
@@ -55,3 +56,4 @@ input[type=number] {
   text-align: center;
   justify-content: center;
 }
+*/
