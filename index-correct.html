@@ -249,7 +249,7 @@
                     <div class="col-4">
                       <div><input type="number" id="Operating Profit"></div>
                       <div><input type="number" id="Non-Current Liabilities"></div>
-                      <div><input type="number" id="Revenue"></div>
+                      <div><input type="number" id="RevenueROCE"></div>
                       <div><p id="resultROCE">0</p></div>
                     </div>
                   </div>
@@ -258,14 +258,14 @@
                   var x15, x16, x17;
                   x15 = document.getElementById("Operating Profit").value;
                   x16 = document.getElementById("Non-Current Liabilities").value;
-                  x17 = document.getElementById("Revenue").value;
+                  x17 = document.getElementById("RevenueROCE").value;
                   console.log(x15 + x16 + x17);
                   var result = (Number(x15) + Number(x16) + Number(x17)) / 100;
                   console.log(result);
                   document.getElementById("resultROCE").innerHTML = result;
                   return result;
                   }
-                  var wage = document.getElementById("Revenue");
+                  var wage = document.getElementById("RevenueROCE");
                   wage.addEventListener("keydown", function (e) {
                   if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
                   myFunctionROCE();
@@ -288,7 +288,7 @@
                         </div>
                         <div class="col-4">
                           <div><input type="number" id="Operating Profit"></div>
-                          <div><input type="number" id="Revenue"></div>
+                          <div><input type="number" id="RevenueROC"></div>
                           <div><p id="resultROS">0</p></div>
                         </div>
                       </div>
@@ -296,14 +296,14 @@
                       function myFunctionROS() {
                       var x15, x17;
                       x15 = document.getElementById("Operating Profit").value;
-                      x17 = document.getElementById("Revenue").value;
+                      x17 = document.getElementById("RevenueROC").value;
                       console.log(x15 + x17);
                       var result = (Number(x15) + Number(x17)) / 100;
                       console.log(result);
                       document.getElementById("resultROS").innerHTML = result;
                       return result;
                       }
-                      var wage = document.getElementById("Revenue");
+                      var wage = document.getElementById("RevenueROC");
                       wage.addEventListener("keydown", function (e) {
                       if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
                       myFunctionROS();
