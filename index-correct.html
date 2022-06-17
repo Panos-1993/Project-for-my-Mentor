@@ -19,10 +19,10 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-item nav-link active" href="#">Home</a>
-              <a class="nav-item nav-link" href="#">Profitability</a>
-              <a class="nav-item nav-link" href="#">Risk</a>
-              <a class="nav-item nav-link" href="#">Liquidity</a>
-              <a class="nav-item nav-link" href="#">Activity</a>
+              <a class="nav-item nav-link" href="#Risk">Risk</a>
+              <a class="nav-item nav-link" href="#Liquidity">Liquidity</a>
+              <a class="nav-item nav-link" href="#Profitability">Profitability</a>
+              <a class="nav-item nav-link" href="#Activity">Activity</a>
             </div>
           </div>
     </nav>
@@ -40,14 +40,14 @@
                       <p class="card-text">Capital gearing is a British term that refers to the amount of debt a company has relative to its equity. In the United States, capital gearing is known as "financial leverage."</p>
                         <div class="row">
                           <div class="col-4">
-                          <div><h5>Non-Current liabilities</h5></div>
-                          <div><h5>Equity</h5></div>
-                          <div><h5>Result</h5></div>
+                          <div class="border border-3"><h5>Non-Current liabilities</h5></div>
+                          <div class="border border-3"><h5>Equity</h5></div>
+                          <div class="border border-3"><h5>Result</h5></div>
                           </div>
-                          <div class="col-2">
-                            <div><input type="number" id="Non-Current liabilities"></div>
-                            <div><input type="number" id="Equity"></div>
-                            <div><p id="resultCapitalGearing">0</p></div>
+                          <div class="col-4">
+                            <div class="border border-3"><input type="number" id="Non-Current liabilities"></div>
+                            <div class="border border-3"><input type="number" id="Equity"></div>
+                            <div><p class="d-flex justify-content-center" id="resultCapitalGearing">0</p></div>
                           </div>
                         </div>
                   </div>
@@ -71,21 +71,21 @@
                       </script> 
                   </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 d-flex align-items-stretch">
                 <div class="card-group">
                     <div class="card mx-auto">
                         <h2 class="card-title">Interest Cover</h2>
                     <p class="card-text">The interest coverage ratio is a debt and profitability ratio used to determine how easily a company can pay interest on its outstanding debt. The interest coverage ratio is calculated by dividing a company's earnings before interest and taxes (EBIT) by its interest expense during a given period.</p>
                     <div class="row">
                         <div class="col-4">
-                            <div><h5>OperatingProfit</h5></div>
-                            <div><h5>FinanceCost</h5></div>
-                            <div><h5>Result</h5></div>
+                            <div class="border border-3"><h5>Operating Profit</h5></div>
+                            <div class="border border-3"><h5>FinanceCost</h5></div>
+                            <div class="border border-3"><h5>Result</h5></div>
                         </div>
-                      <div class="col-2">
-                        <div><input type="number" id="OperatingProfit"></div>
-                        <div><input type="number" id="FinanceCost"></div>
-                        <div><p id="resultInterestCover">0</p></div>
+                      <div class="col-4">
+                        <div class="border border-3"><input type="number" id="OperatingProfit"></div>
+                        <div class="border border-3"><input type="number" id="FinanceCost"></div>
+                        <div><p class="d-flex justify-content-center" id="resultInterestCover">0</p></div>
                       </div>
                     </div>
                   </div>
@@ -120,16 +120,16 @@
                     <p class="card-text">The quick ratio is an indicator of a company’s short-term liquidity position and measures a company’s ability to meet its short-term obligations with its most liquid assets.</p>
                       <div class="row">
                         <div class="col-4">
-                          <div><h5>Current Assets</h5></div>
-                          <div><h5>Inventory</h5></div>
-                          <div><h5>Current Liabilities</h5></div>
-                          <div><h5>Result</h5></div>
+                          <div class="border border-3"><h5>Current Assets</h5></div>
+                          <div class="border border-3"><h5>Inventory</h5></div>
+                          <div class="border border-3"><h5>Current Liabilities</h5></div>
+                          <div class="border border-3"><h5>Result</h5></div>
                         </div>
                         <div class="col-4">
-                            <div><input type="number" id="Current Assets"></div>
-                            <div><input type="number" id="Equity"></div>
-                            <div><input type="number" id="Current Liabilities"></div>
-                            <div><p id="resultQuickRatio">0</p></div>
+                            <div class="border border-3"><input type="number" id="Current Assets"></div>
+                            <div class="border border-3"><input type="number" id="Equity"></div>
+                            <div class="border border-3"><input type="number" id="Current Liabilities"></div>
+                            <div><p class="d-flex justify-content-center" id="resultQuickRatio">0</p></div>
                         </div>
                         </div>
                       </div>
@@ -155,20 +155,20 @@
                     </script> 
                 
           </div>
-          <div class="col-6 d-flex align-items-stretch>
+          <div class="col-6 d-flex align-items-stretch">
               <div class="card-group">
                   <div class="card mx-auto">
                       <h2 class="card-title">Current Ratio</h2>
                         <p class="card-text">The current ratio is a liquidity ratio that measures a company’s ability to pay short-term obligations or those due within one year. It tells investors and analysts how a company can maximize the current assets on its balance sheet to satisfy its current debt and other payables.</p>
                   <div class="row">
                       <div class="col-3">
-                          <div><h5>Current Assets</h5></div>
-                          <div><h5>Current Liabilities</h5></div>
+                          <div class="border border-3"><h5>Current Assets</h5></div>
+                          <div class="border border-3"><h5>Current Liabilities</h5></div>
                       </div>
                       <div class="col-3">
-                      <div><input type="number" id="Current Assets"></div>
-                      <div><input type="number" id="Current Liabilities"></div>
-                      <div><p id="resultCurrentRatio">0</p></div>
+                      <div class="border border-3"><input type="number" id="Current Assets"></div>
+                      <div class="border border-3"><input type="number" id="Current Liabilities"></div>
+                      <div><p class="d-flex justify-content-center" id="resultCurrentRatio">0</p></div>
                       </div>
                   </div>
                 </div>
@@ -189,132 +189,134 @@
                     myFunctionCurrentRatio();
                     }
                     });
-                </script> 
+                </script>
+                </div>   
                 </div>
           </div>
-        </div>
   </div>
-   <div class="container px-4 py-5" id="Profitability">
-      <div class="row">
-        <div class="col 4 d-flex align-items-stretch">
-          <div class="card-group">
-            <div class="card mx-auto">
-              <h2 class="card-title">Gross Margin</h2>
-              <p class="card-text">The Gross Margin Ratio, also known as the gross profit margin ratio, is a profitability ratio that compares the gross margin of a company to its revenue. It shows how much profit a company makes after paying off its Cost of Goods Sold (COGS). </p>
-              <div class="row">
-                <div class="col-3">
-                  <div><h5>Gross Profit</h5></div>
-                  <div><h5>Revenue</h5></div>
-                  <div><h5>Result</h5></div>
-                </div>
-                <div class="col-3">
-                  <div><input type="number" id="Gross Profit"></div>
-                  <div><input type="number" id="Revenue"></div>
-                  <div><p id="resultGrossMargin">0</p></div>
-                </div>
-              </div>
-              <script>
-                function myFunctionGrossMargin() {
-                var x5, x6;
-                x5 = document.getElementById("Gross Profit").value;
-                x6 = document.getElementById("Revenue").value;
-                console.log(x5 + x6);
-                var result = (Number(x5) / Number(x6)) / 100;
-                console.log(result);
-                document.getElementById("resultGrossMargin").innerHTML = result;
-                return result;
-                }
-                var wage = document.getElementById("Revenue");
-                wage.addEventListener("keydown", function (e) {
-                if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
-                myFunctionGrossMargin();
-                }
-                });
-              </script>                  
-                </div>
-              </div>
-            </div>
+  <div class="container px-4 py-5" id="Profitability">
+          <div class="row">
             <div class="col 4 d-flex align-items-stretch">
               <div class="card-group">
                 <div class="card mx-auto">
-                  <h2 class="card-title">Return On Capital Employed (ROCE)</h2>
-                  <p class="card-text">Return on capital employed is calculated by dividing net operating profit, or earnings before interest and taxes (EBIT), by capital employed. Another way to calculate it is by dividing earnings before interest and taxes by the difference between total assets and current liabilities.</p>
+                  <h2 class="card-title">Gross Margin</h2>
+                  <p class="card-text">The Gross Margin Ratio, also known as the gross profit margin ratio, is a profitability ratio that compares the gross margin of a company to its revenue. It shows how much profit a company makes after paying off its Cost of Goods Sold (COGS). </p>
                   <div class="row">
-                    <div class="col-4">
-                      <div><h5>Operating Profit</h5></div>
-                      <div><h5>Non-Current Liabilities</h5></div>
-                      <div><h5>Revenue</h5></div>
-                      <div><h5>Result</h5></div>
+                    <div class="col-6">
+                      <div class="border border-3"><h5>Gross Profit</h5></div>
+                      <div class="border border-3"><h5>Revenue</h5></div>
+                      <div class="border border-3"><h5>Result</h5></div>
                     </div>
-                    <div class="col-4">
-                      <div><input type="number" id="Operating Profit"></div>
-                      <div><input type="number" id="Non-Current Liabilities"></div>
-                      <div><input type="number" id="RevenueROCE"></div>
-                      <div><p id="resultROCE">0</p></div>
+                    <div class="col-6">
+                      <div class="border border-3"><input type="number" id="Gross Profit"></div>
+                      <div class="border border-3"><input type="number" id="Revenue"></div>
+                      <div><p class="d-flex justify-content-center" id="resultGrossMargin">0</p></div>
                     </div>
                   </div>
                   <script>
-                  function myFunctionROCE() {
-                  var x15, x16, x17;
-                  x15 = document.getElementById("Operating Profit").value;
-                  x16 = document.getElementById("Non-Current Liabilities").value;
-                  x17 = document.getElementById("RevenueROCE").value;
-                  console.log(x15 + x16 + x17);
-                  var result = (Number(x15) + Number(x16) + Number(x17)) / 100;
-                  console.log(result);
-                  document.getElementById("resultROCE").innerHTML = result;
-                  return result;
-                  }
-                  var wage = document.getElementById("RevenueROCE");
-                  wage.addEventListener("keydown", function (e) {
-                  if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
-                  myFunctionROCE();
-                  }
-                  });
+                    function myFunctionGrossMargin() {
+                    var x5, x6;
+                    x5 = document.getElementById("Gross Profit").value;
+                    x6 = document.getElementById("Revenue").value;
+                    console.log(x5 + x6);
+                    var result = (Number(x5) / Number(x6)) / 100;
+                    console.log(result);
+                    document.getElementById("resultGrossMargin").innerHTML = result;
+                    return result;
+                    }
+                    var wage = document.getElementById("Revenue");
+                    wage.addEventListener("keydown", function (e) {
+                    if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
+                    myFunctionGrossMargin();
+                    }
+                    });
                   </script>                  
                     </div>
                   </div>
-                </div>  
+                </div>
                 <div class="col 4 d-flex align-items-stretch">
                   <div class="card-group">
                     <div class="card mx-auto">
-                      <h2 class="card-title">Return On Sales (ROS)</h2>
-                      <p class="card-text">Return on sales (ROS) is a ratio used to evaluate a company's operational efficiency. This measure provides insight into how much profit is being produced per dollar of sales. An increasing ROS indicates that a company is improving efficiency, while a decreasing ROS could signal impending financial troubles. ROS is closely related to a firm's operating profit margin.</p>
+                      <h2 class="card-title">Return On Capital Employed (ROCE)</h2>
+                      <p class="card-text">Return on capital employed is calculated by dividing net operating profit, or earnings before interest and taxes (EBIT), by capital employed. Another way to calculate it is by dividing earnings before interest and taxes by the difference between total assets and current liabilities.</p>
                       <div class="row">
-                        <div class="col-3">
-                          <div><h5>Operating Profit</h5></div>
-                          <div><h5>Revenue</h5></div>
-                          <div><h5>Result</h5></div>
+                        <div class="col-6">
+                          <div class="border border-3"><h5>Operating Profit</h5></div>
+                          <div class="border border-3"><h5>Non-Current Liabilities</h5></div>
+                          <div class="border border-3"><h5>Revenue</h5></div>
+                          <div class="border border-3"><h5>Result</h5></div>
                         </div>
-                        <div class="col-4">
-                          <div><input type="number" id="Operating Profit"></div>
-                          <div><input type="number" id="RevenueROC"></div>
-                          <div><p id="resultROS">0</p></div>
+                        <div class="col-6">
+                          <div class="border border-3"><input type="number" id="Operating Profit"></div>
+                          <div class="border border-3"><input type="number" id="Non-Current Liabilities"></div>
+                          <div class="border border-3"><input type="number" id="RevenueROCE"></div>
+                          <div><p class="d-flex justify-content-center" id="resultROCE">0</p></div>
                         </div>
                       </div>
                       <script>
-                      function myFunctionROS() {
-                      var x15, x17;
+                      function myFunctionROCE() {
+                      var x15, x16, x17;
                       x15 = document.getElementById("Operating Profit").value;
-                      x17 = document.getElementById("RevenueROC").value;
-                      console.log(x15 + x17);
-                      var result = (Number(x15) + Number(x17)) / 100;
+                      x16 = document.getElementById("Non-Current Liabilities").value;
+                      x17 = document.getElementById("RevenueROCE").value;
+                      console.log(x15 + x16 + x17);
+                      var result = (Number(x15) + Number(x16) + Number(x17)) / 100;
                       console.log(result);
-                      document.getElementById("resultROS").innerHTML = result;
+                      document.getElementById("resultROCE").innerHTML = result;
                       return result;
                       }
-                      var wage = document.getElementById("RevenueROC");
+                      var wage = document.getElementById("RevenueROCE");
                       wage.addEventListener("keydown", function (e) {
                       if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
-                      myFunctionROS();
+                      myFunctionROCE();
                       }
                       });
                       </script>                  
                         </div>
                       </div>
-                    </div>      
-          </div>
-    </div>
+                    </div>  
+                    <div class="col 4 d-flex align-items-stretch">
+                      <div class="card-group">
+                        <div class="card mx-auto">
+                          <h2 class="card-title">Return On Sales (ROS)</h2>
+                          <p class="card-text">Return on sales (ROS) is a ratio used to evaluate a company's operational efficiency. This measure provides insight into how much profit is being produced per dollar of sales. An increasing ROS indicates that a company is improving efficiency, while a decreasing ROS could signal impending financial troubles. ROS is closely related to a firm's operating profit margin.</p>
+                          <div class="row">
+                            <div class="col-6">
+                              <div class="border border-3"><h5>Operating Profit</h5></div>
+                              <div class="border border-3"><h5>Revenue</h5></div>
+                              <div class="border border-3"><h5>Result</h5></div>
+                            </div>
+                            <div class="col-6">
+                              <div class="border border-3"><input type="number" id="Operating Profit"></div>
+                              <div class="border border-3"><input type="number" id="RevenueROC"></div>
+                              <div><p class="d-flex justify-content-center" id="resultROS">0</p></div>
+                            </div>
+                          </div>
+                          <script>
+                          function myFunctionROS() {
+                          var x15, x17;
+                          x15 = document.getElementById("Operating Profit").value;
+                          x17 = document.getElementById("RevenueROC").value;
+                          console.log(x15 + x17);
+                          var result = (Number(x15) + Number(x17)) / 100;
+                          console.log(result);
+                          document.getElementById("resultROS").innerHTML = result;
+                          return result;
+                          }
+                          var wage = document.getElementById("RevenueROC");
+                          wage.addEventListener("keydown", function (e) {
+                          if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
+                          myFunctionROS();
+                          }
+                          });
+                          </script>                  
+                            </div>
+                          </div>
+                        </div>      
+              </div>
+  </div>
+  </div>
+
 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     <div class="col-md-4 d-flex align-items-center">
       <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
