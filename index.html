@@ -160,13 +160,14 @@
                       <h2 class="card-title">Current Ratio</h2>
                         <p class="card-text">The current ratio is a liquidity ratio that measures a company’s ability to pay short-term obligations or those due within one year. It tells investors and analysts how a company can maximize the current assets on its balance sheet to satisfy its current debt and other payables.</p>
                   <div class="row">
-                      <div class="col-3">
+                      <div class="col-4">
                           <div class="border border-3"><h5>Current Assets</h5></div>
                           <div class="border border-3"><h5>Current Liabilities</h5></div>
+                          <div class="border border-3"><h5>Result</h5></div>
                       </div>
-                      <div class="col-3">
-                      <div class="border border-3"><input type="number" id="Current Assets"></div>
-                      <div class="border border-3"><input type="number" id="Current Liabilities"></div>
+                      <div class="col-4">
+                      <div class="border border-3"><input type="number" id="CurrentAssets"></div>
+                      <div class="border border-3"><input type="number" id="CurrentLiabilities"></div>
                       <div><p class="d-flex justify-content-center" id="resultCurrentRatio">0</p></div>
                       </div>
                   </div>
@@ -174,15 +175,15 @@
                 <script>
                     function myFunctionCurrentRatio() {
                     var x3, x4;
-                    x3 = document.getElementById("Current Assets").value;
-                    x4 = document.getElementById("Current Liabilities").value;
+                    x3 = document.getElementById("CurrentAssets").value;
+                    x4 = document.getElementById("CurrentLiabilities").value;
                     console.log(x3 + x4);
                     var result = (Number(x3) / Number(x4));
                     console.log(result);
                     document.getElementById("resultCurrentRatio").innerHTML = result;
                     return result;
                     }
-                    var wage = document.getElementById("Current Liabilities");
+                    var wage = document.getElementById("CurrentLiabilities");
                     wage.addEventListener("keydown", function (e) {
                     if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
                     myFunctionCurrentRatio();
