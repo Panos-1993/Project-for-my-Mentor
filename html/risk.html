@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Risk</title>
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
-            <a class="navbar-brand" href="index.html">Personal Project</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-item nav-link active" href="index.html">Home</a>
-                  <a class="nav-item nav-link" href="#">Risk</a>
-                  <a class="nav-item nav-link" href="liquidity.html">Liquidity</a>
-                  <a class="nav-item nav-link" href="profitability.html">Profitability</a>
-                  <a class="nav-item nav-link" href="activity.html">Activity</a>
-                </div>
-              </div>
-        </nav>
-      </header>
-    <div class="container px-4 py-5" id="Risk" >
-        <div class="row">
+<body class="d-flex flex-column h-100">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+        <a class="navbar-brand" href="index.html">Personal Project</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="index.html">Home</a>
+              <a class="nav-item nav-link" href="#">Risk</a>
+              <a class="nav-item nav-link" href="liquidity.html">Liquidity</a>
+              <a class="nav-item nav-link" href="profitability.html">Profitability</a>
+              <a class="nav-item nav-link" href="activity.html">Activity</a>
+            </div>
+          </div>
+    </nav>
+  </header>
+  <main class="flex-shrink-0">
+  <div class="container px-4 py-5">
+    <h1 class="mt-5">Risk</h1>
+    <p>Risk is defined in financial terms as the chance that an outcome or investment's actual gains will differ from an expected outcome or return. Risk includes the possibility of losing some or all of an original investment.1
+
+      Quantifiably, risk is usually assessed by considering historical behaviors and outcomes. In finance, standard deviation is a common metric associated with risk. Standard deviation provides a measure of the volatility of asset prices in comparison to their historical averages in a given time frame.
+      
+      Overall, it is possible and prudent to manage investing risks by understanding the basics of risk and how it is measured. Learning the risks that can apply to different scenarios and some of the ways to manage them holistically will help all types of investors and business managers to avoid unnecessary and costly losses.</p>
+    <div class="row">
             <div class="col-6 d-flex align-items-stretch">
                 <div class="card-group" id="CapitalGearing">
                   <div class="card mx-auto">
@@ -36,35 +43,17 @@
                       <p class="card-text">Capital gearing is a British term that refers to the amount of debt a company has relative to its equity. In the United States, capital gearing is known as "financial leverage."</p>
                         <div class="row">
                           <div class="col-4">
-                          <div class="border border-3"><h5>Non-Current liabilities</h5></div>
-                          <div class="border border-3"><h5>Equity</h5></div>
-                          <div class="border border-3"><h5>Result</h5></div>
+                          <div><h5>Non-Current liabilities</h5></div>
+                          <div><h5>Equity</h5></div>
+                          <div><h5>Result</h5></div>
                           </div>
                           <div class="col-4">
-                            <div class="border border-3"><input type="number" id="Non-Current liabilities"></div>
-                            <div class="border border-3"><input type="number" id="Equity"></div>
+                            <div><input type="number" id="Non-Current liabilities"></div>
+                            <div><input type="number" id="Equity"></div>
                             <div><p class="d-flex justify-content-center" id="resultCapitalGearing">0</p></div>
                           </div>
                         </div>
                   </div>
-                      <script>
-                      function myFunctionCapitalGearing() {
-                      var x1, x2;
-                      x1 = document.getElementById("Non-Current liabilities").value;
-                      x2 = document.getElementById("Equity").value;
-                      console.log(x1 + x2);
-                      var result = (Number(x1) / Number(x2)) / 100 ;
-                      console.log(result);
-                      document.getElementById("resultCapitalGearing").innerHTML = result;
-                      return result;
-                      }
-                      var wage = document.getElementById("Equity");
-                      wage.addEventListener("keydown", function (e) {
-                      if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
-                      myFunctionCapitalGearing();
-                      }
-                      });
-                    </script> 
                   </div>
             </div>
             <div class="col-6 d-flex align-items-stretch">
@@ -74,41 +63,26 @@
                     <p class="card-text">The interest coverage ratio is a debt and profitability ratio used to determine how easily a company can pay interest on its outstanding debt. The interest coverage ratio is calculated by dividing a company's earnings before interest and taxes (EBIT) by its interest expense during a given period.</p>
                     <div class="row">
                         <div class="col-4">
-                            <div class="border border-3"><h5>Operating Profit</h5></div>
-                            <div class="border border-3"><h5>FinanceCost</h5></div>
-                            <div class="border border-3"><h5>Result</h5></div>
+                            <div><h5>Operating Profit</h5></div>
+                            <div><h5>FinanceCost</h5></div>
+                            <div><h5>Result</h5></div>
                         </div>
                       <div class="col-4">
-                        <div class="border border-3"><input type="number" id="OperatingProfit"></div>
-                        <div class="border border-3"><input type="number" id="FinanceCost"></div>
+                        <div><input type="number" id="OperatingProfit"></div>
+                        <div><input type="number" id="FinanceCost"></div>
                         <div><p class="d-flex justify-content-center" id="resultInterestCover">0</p></div>
                       </div>
                     </div>
                   </div>
-                  <script>
-                    function myFunctionInterestCover() {
-                    var x7, x8;
-                    x7 = document.getElementById("OperatingProfit").value;
-                    x8 = document.getElementById("FinanceCost").value;
-                    console.log(x7 + x8);
-                        var result = (Number(x7) / Number(x8));
-                    console.log(result);
-                    document.getElementById("resultInterestCover").innerHTML = result;
-                  return result;
-                }
-                var wage = document.getElementById("FinanceCost");
-                wage.addEventListener("keydown", function (e) {
-                    if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
-                        myFunctionInterestCover();
-                    }
-                  });
-                  </script> 
+
                   </div>
             </div>
-        </div>
-  </div>  
+      </div>
+  </div> 
+</main> 
+<script src="../script/scripts.js" type="text/javascript"></script>
 </body>
-<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+<footer class="footer mt-auto py-3 bg-light">
     <div class="col-md-4 d-flex align-items-center">
       <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
         <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
