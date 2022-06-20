@@ -112,3 +112,49 @@ function myFunctionReceivablesDays() {
         myFunctionReceivablesDays();
         }
       }); }
+function myFunctionCurrentRatio() {
+      var x3, x4;
+      x3 = document.getElementById("CurrentAssets").value;
+      x4 = document.getElementById("CurrentLiabilities").value;
+      console.log(x3 + x4);
+      if (x3 >= 0 && x4 >= 0){
+      var result = (Number(x3) / Number(x4));
+      console.log(result);
+      document.getElementById("resultCurrentRatio").innerHTML = result;
+      document.getElementById("resultCurrentRatio").style.backgroundColor = "green";
+      return result;
+      } else {
+        document.getElementById("resultCurrentRatio").style.backgroundColor = "red";
+      }
+      }
+      var currentRatio = document.getElementById("CurrentLiabilities");
+      if (currentRatio != null){
+        currentRatio.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
+      myFunctionCurrentRatio();
+      }
+      });}
+ 
+function myFunctionQuickRatio() {
+        var x15, x16, x17;
+        x15 = document.getElementById("Current Assets").value;
+        x16 = document.getElementById("Inventory").value;
+        x17 = document.getElementById("CurrentLiabilitiesQuickRatio").value;
+        console.log(x15 + x16 + x17);
+        if (x15 >= 0 && x16 >= 0 && x17 >=0){
+        var result = ( (Number(x15) - Number(x16) / (Number(x17)) ) );
+        console.log(result);
+        document.getElementById("resultQuickRatio").innerHTML = result;
+        document.getElementById("resultQuickRatio").style.backgroundColor = "green";
+        return result;
+        } else {
+          document.getElementById("resultQuickRatio").style.backgroundColor = "red";
+        }
+        }
+        var quickRatio = document.getElementById("CurrentLiabilitiesQuickRatio");
+        if (quickRatio != null){
+          quickRatio.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
+          myFunctionQuickRatio();
+        }
+        });}      
