@@ -19,10 +19,10 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-item nav-link active" href="#">Home</a>
-              <a class="nav-item nav-link" href="#Risk">Risk</a>
-              <a class="nav-item nav-link" href="#Liquidity">Liquidity</a>
-              <a class="nav-item nav-link" href="#Profitability">Profitability</a>
-              <a class="nav-item nav-link" href="#Activity">Activity</a>
+              <a class="nav-item nav-link" href="html\risk.html">Risk</a>
+              <a class="nav-item nav-link" href="html\liquidity.html">Liquidity</a>
+              <a class="nav-item nav-link" href="html\profitability.html">Profitability</a>
+              <a class="nav-item nav-link" href="html\activity.html">Activity</a>
             </div>
           </div>
     </nav>
@@ -335,20 +335,25 @@
               </div>
             </div>
             <script>
-              function myFunction() {
+              function myInventoryDays() {
               var x9, x10;
               x9 = document.getElementById("Inventory").value;
               x10 = document.getElementById("CoS").value;
               console.log(x9 + x10);
+              if (x9 >= 0 && x10 >= 0){
               var result = (Number(x9) / Number(x10)) * 365;
               console.log(result);
               document.getElementById("resultInventoryDays").innerHTML = result;
+              document.getElementById("resultInventoryDays").style.backgroundColor = "green";
               return result;
+              } if (x9 >= 0 && x10 < 0){
+                document.getElementById("resultInventoryDays").style.backgroundColor = "red";
+              }
               }
               var wage = document.getElementById("CoS");
               wage.addEventListener("keydown", function (e) {
               if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
-              myFunction();
+              myInventoryDays();
               }
               });
             </script>                  
