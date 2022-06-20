@@ -159,7 +159,7 @@ function myFunctionQuickRatio() {
         }
         });}      
 
-        function myFunctionGrossMargin() {
+function myFunctionGrossMargin() {
         var x18, x19;
         x18 = document.getElementById("GrossProfitGrossMargin").value;
         x19 = document.getElementById("RevenueGrossMargin").value;
@@ -182,37 +182,49 @@ function myFunctionQuickRatio() {
         }
         });}    
         
-        function myFunctionROCE() {
-          var x20, x21, x22;
-          x20 = document.getElementById("Operating Profit").value;
-          x21 = document.getElementById("Non-Current Liabilities").value;
-          x22 = document.getElementById("RevenueROCE").value;
-          console.log(x20 + x21 + x22);
-          var result = (Number(x20) + Number(x21) + Number(x22)) / 100;
-          console.log(result);
-          document.getElementById("resultROCE").innerHTML = result;
-          return result;
-          }
-          var rOCE = document.getElementById("RevenueROCE");
-          rOCE.addEventListener("keydown", function (e) {
-          if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
-          myFunctionROCE();
-          }
-          });
+function myFunctionROCE() {
+        var x20, x21, x22;
+        x20 = document.getElementById("OperatingProfitROCE").value;
+        x21 = document.getElementById("Non-Current Liabilities").value;
+        x22 = document.getElementById("RevenueROCE").value;
+        console.log(x20 + x21 + x22);
+        if (x20 >= 0 && x21 >= 0 && x22 >= 0){
+        var result = (Number(x20) + Number(x21) + Number(x22)) / 100;
+        console.log(result);
+        document.getElementById("resultROCE").innerHTML = result;
+        document.getElementById("resultROCE").style.backgroundColor = "green";
+        return result;
+        } else {
+        document.getElementById("resultROCE").style.backgroundColor = "red";  
+        }
+        }
+        var rOCE = document.getElementById("RevenueROCE");
+        if (rOCE != null){
+        rOCE.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
+        myFunctionROCE();
+        }
+        });}
       
-      function myFunctionROS() {
-          var x23, x24;
-          x23 = document.getElementById("Operating Profit").value;
-          x24 = document.getElementById("RevenueROC").value;
-          console.log(x23 + x24);
-          var result = (Number(x23) + Number(x24)) / 100;
-          console.log(result);
-          document.getElementById("resultROS").innerHTML = result;
-          return result;
-          }
-          var rOS = document.getElementById("RevenueROC");
-          rOS.addEventListener("keydown", function (e) {
-          if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
-          myFunctionROS();
-          }
-          });
+function myFunctionROS() {
+      var x23, x24;
+      x23 = document.getElementById("OperatingProfitROS").value;
+      x24 = document.getElementById("RevenueROC").value;
+      console.log(x23 + x24);
+      if (x23 >= 0 && x24 >= 0){
+      var result = (Number(x23) + Number(x24)) / 100;
+      console.log(result);
+      document.getElementById("resultROS").innerHTML = result;
+      document.getElementById("resultROS").style.backgroundColor = "green";
+      return result;
+      } else {
+      document.getElementById("resultROS").style.backgroundColor = "red";  
+      }
+      }
+      var rOS = document.getElementById("RevenueROC");
+      if (rOS != null){
+      rOS.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
+      myFunctionROS();
+      }
+      });}
