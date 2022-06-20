@@ -13,12 +13,13 @@ function myFunctionCapitalGearing() {
     document.getElementById("resultCapitalGearing").style.backgroundColor = "red";
     }
     }
-    var wage = document.getElementById("Equity");
-    wage.addEventListener("keydown", function (e) {
+    var capitalGearing = document.getElementById("Equity");
+    if (capitalGearing != null){
+      capitalGearing.addEventListener("keydown", function (e) {
     if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
     myFunctionCapitalGearing();
     }
-    });
+    }); }
 
 function myFunctionInterestCover() {
     var x7, x8;
@@ -35,12 +36,13 @@ function myFunctionInterestCover() {
       document.getElementById("resultInterestCover").style.backgroundColor = "red";
       }
     }
-    var wage = document.getElementById("FinanceCost");
-    wage.addEventListener("keydown", function (e) {
+    var interestCover = document.getElementById("FinanceCost");
+    if (interestCover != null){
+      interestCover.addEventListener("keydown", function (e) {
     if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
     myFunctionInterestCover();
     }
-    });
+    }); }
 
 function myFunctionInventoryDays() {
       var x9, x10;
@@ -58,38 +60,40 @@ function myFunctionInventoryDays() {
       }
   }
   var wage = document.getElementById("CoS");
+  if (wage != null){
   wage.addEventListener("keydown", function (e) {
       if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
-          myFunction();
+        myFunctionInventoryDays();
       }
-    });
+    }); }
 
 function myFunctionPayableDays() {
       var x11, x12;
-      x11 = document.getElementById("Payables").value;
-      x12 = document.getElementById("CreditPurchases").value;
+      x11 = document.getElementById("PayablesPayablesDays").value;
+      x12 = document.getElementById("CreditPurchasesPayablesDays").value;
       console.log(x11 + x12);
       if (x11 >= 0 && x12 >= 0){
       var result = (Number(x11) / Number(x12)) * 365;
       console.log(result);
-      document.getElementById("resultPayableDays").innerHTML = result;
-      document.getElementById("resultPayableDays").style.backgroundColor = "green";
+      document.getElementById("resultDaysPayable").innerHTML = result;
+      document.getElementById("resultDaysPayable").style.backgroundColor = "green";
       return result;
       } else {
-      document.getElementById("resultPayableDays").style.backgroundColor = "red";
+      document.getElementById("resultDaysPayable").style.backgroundColor = "red";
       }
       }
-      var wage = document.getElementById("CreditPurchases");
-      wage.addEventListener("keydown", function (e) {
+      var creditPurchases = document.getElementById("CreditPurchasesPayablesDays");
+      if (creditPurchases != null){
+        creditPurchases.addEventListener("keydown", function (e) {
       if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
       myFunctionPayableDays();
       }
-      });
+      }); }
 
 function myFunctionReceivablesDays() {
         var x13, x14;
         x13 = document.getElementById("Receivables").value;
-        x14 = document.getElementById("CreditSales").value;
+        x14 = document.getElementById("CreditSalesReceivables").value;
         console.log(x13 + x14);
         if (x13 >= 0 && x14 >= 0){
         var result = (Number(x13) / Number(x14)) * 365;
@@ -101,9 +105,10 @@ function myFunctionReceivablesDays() {
         document.getElementById("resultReceivablesDays").style.backgroundColor = "red";
         }
         }
-        var wage = document.getElementById("CreditSales");
-        wage.addEventListener("keydown", function (e) {
+        var receivablesDays = document.getElementById("CreditSalesReceivables");
+        if (receivablesDays != null){
+          receivablesDays.addEventListener("keydown", function (e) {
         if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
         myFunctionReceivablesDays();
         }
-      });
+      }); }
