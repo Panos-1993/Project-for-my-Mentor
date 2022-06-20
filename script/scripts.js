@@ -51,7 +51,7 @@ function myFunctionInventoryDays() {
       var result = (Number(x9) / Number(x10)) * 365;
       console.log(result);
       document.getElementById("resultInventoryDays").innerHTML = result;
-      document.getElementById("rresultInventoryDays").style.backgroundColor = "green";
+      document.getElementById("resultInventoryDays").style.backgroundColor = "green";
       return result;
     } else {
       document.getElementById("resultInventoryDays").style.backgroundColor = "red";
@@ -85,7 +85,7 @@ function myFunctionPayableDays() {
       myFunctionPayableDays();
       }
       });
-      
+
 function myFunctionReceivablesDays() {
         var x13, x14;
         x13 = document.getElementById("Receivables").value;
