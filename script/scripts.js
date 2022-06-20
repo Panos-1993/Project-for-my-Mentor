@@ -41,6 +41,7 @@ function myFunctionInterestCover() {
     myFunctionInterestCover();
     }
     });
+
 function myFunctionInventoryDays() {
       var x9, x10;
       x9 = document.getElementById("Inventory").value;
@@ -84,6 +85,7 @@ function myFunctionPayableDays() {
       myFunctionPayableDays();
       }
       });
+      
 function myFunctionReceivablesDays() {
         var x13, x14;
         x13 = document.getElementById("Receivables").value;
