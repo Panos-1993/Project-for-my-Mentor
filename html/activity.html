@@ -30,7 +30,7 @@
       <main class="flex-shrink-0">
         <div class="container px-4 py-5">
           <h1 class="mt-5">Activity</h1>
-          <p>Activity Info</p>
+          <p>An activity ratio is a type of financial metric that indicates how efficiently a company is leveraging the assets on its balance sheet, to generate revenues and cash. Commonly referred to as efficiency ratios, activity ratios help analysts gauge how a company handles inventory management, which is key to its operational fluidity and overall fiscal health.</p>
           <div class="row">
             <div class="col 4 d-flex align-items-stretch">
               <div class="card-group">
@@ -39,39 +39,16 @@
                   <p class="card-text">The days sales of inventory (DSI) is a financial ratio that indicates the average time in days that a company takes to turn its inventory, including goods that are a work in progress, into sales. </p>
                   <div class="row">
                     <div class="col-6">
-                      <div class="border border-3"><h5>Inventory</h5></div>
-                      <div class="border border-3"><h5>CoS</h5></div>
-                      <div class="border border-3"><h5>Result</h5></div>
+                      <div><h5>Inventory</h5></div>
+                      <div><h5>CoS</h5></div>
+                      <div><h5>Result</h5></div>
                     </div>
                     <div class="col-6">
-                      <div class="border border-3"><input type="number" id="Inventory"></div>
-                      <div class="border border-3"><input type="number" id="CoS"></div>
+                      <div><input type="number" id="Inventory"></div>
+                      <div><input type="number" id="CoS"></div>
                       <div><p class="d-flex justify-content-center" id="resultInventoryDays">0</p></div>
                     </div>
-                  </div>
-                  <script>
-                    function myInventoryDays() {
-                    var x9, x10;
-                    x9 = document.getElementById("Inventory").value;
-                    x10 = document.getElementById("CoS").value;
-                    console.log(x9 + x10);
-                    if (x9 >= 0 && x10 >= 0){
-                    var result = (Number(x9) / Number(x10)) * 365;
-                    console.log(result);
-                    document.getElementById("resultInventoryDays").innerHTML = result;
-                    document.getElementById("resultInventoryDays").style.backgroundColor = "green";
-                    return result;
-                    } if (x9 >= 0 && x10 < 0){
-                      document.getElementById("resultInventoryDays").style.backgroundColor = "red";
-                    }
-                    }
-                    var wage = document.getElementById("CoS");
-                    wage.addEventListener("keydown", function (e) {
-                    if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
-                    myInventoryDays();
-                    }
-                    });
-                  </script>                  
+                  </div>              
                     </div>
                   </div>
                 </div>
@@ -82,34 +59,16 @@
                       <p class="card-text">Days payable outstanding (DPO) is a financial ratio that indicates the average time (in days) that a company takes to pay its bills and invoices to its trade creditors, which may include suppliers, vendors, or financiers. The ratio is typically calculated on a quarterly or annual basis, and it indicates how well the company’s cash outflows are being managed.</p>
                       <div class="row">
                         <div class="col-6">
-                          <div class="border border-3"><h5>Payables</h5></div>
-                          <div class="border border-3"><h5>Credit Purchases</h5></div>
-                          <div class="border border-3"><h5>Result</h5></div>
+                          <div><h5>Payables</h5></div>
+                          <div><h5>Credit Purchases</h5></div>
+                          <div><h5>Result</h5></div>
                         </div>
                         <div class="col-6">
-                          <div class="border border-3"><input type="number" id="PayablesPayablesDays"></div>
-                          <div class="border border-3"><input type="number" id="CreditPurchasesPayablesDays"></div>
+                          <div><input type="number" id="PayablesPayablesDays"></div>
+                          <div><input type="number" id="CreditPurchasesPayablesDays"></div>
                           <div><p class="d-flex justify-content-center" id="resultDaysPayable">0</p></div>
                         </div>
-                      </div>
-                      <script>
-                      function myFunctionPayableDays() {
-                      var x11, x12;
-                      x11 = document.getElementById("PayablesPayablesDays").value;
-                      x12 = document.getElementById("CreditPurchasesPayablesDays").value;
-                      console.log(x11 + x12);
-                      var result = (Number(x11) / Number(x12)) * 365;
-                      console.log(result);
-                      document.getElementById("resultDaysPayable").innerHTML = result;
-                      return result;
-                      }
-                      var wage = document.getElementById("CreditPurchasesPayablesDays");
-                      wage.addEventListener("keydown", function (e) {
-                      if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
-                      myFunctionPayableDays();
-                      }
-                      });
-                      </script>                  
+                      </div>                
                         </div>
                       </div>
                     </div>  
@@ -120,34 +79,16 @@
                           <p class="card-text">The term receivables turnover ratio refers to an accounting measure that quantifies a company's effectiveness in collecting its accounts receivable. This ratio measures how well a company uses and manages the credit it extends to customers and how quickly that short-term debt is collected or is paid.</p>
                           <div class="row">
                             <div class="col-6">
-                              <div class="border border-3"><h5>Receivables</h5></div>
-                              <div class="border border-3"><h5>Credit Sales</h5></div>
-                              <div class="border border-3"><h5>Result</h5></div>
+                              <div><h5>Receivables</h5></div>
+                              <div><h5>Credit Sales</h5></div>
+                              <div><h5>Result</h5></div>
                             </div>
                             <div class="col-6">
-                              <div class="border border-3"><input type="number" id="Receivables"></div>
-                              <div class="border border-3"><input type="number" id="CreditSalesReceivables"></div>
+                              <div><input type="number" id="Receivables"></div>
+                              <div><input type="number" id="CreditSalesReceivables"></div>
                               <div><p class="d-flex justify-content-center" id="resultReceivablesDays">0</p></div>
                             </div>
-                          </div>
-                          <script>
-                          function myFunctionReceivablesDays() {
-                          var x13, x14;
-                          x13 = document.getElementById("Receivables").value;
-                          x14 = document.getElementById("CreditSalesReceivables").value;
-                          console.log(x13 + x14);
-                          var result = (Number(x13) / Number(x14)) * 365;
-                          console.log(result);
-                          document.getElementById("resultReceivablesDays").innerHTML = result;
-                          return result;
-                          }
-                          var wage = document.getElementById("CreditSalesReceivables");
-                          wage.addEventListener("keydown", function (e) {
-                          if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
-                          myFunctionReceivablesDays();
-                          }
-                          });
-                          </script>                  
+                          </div>              
                             </div>
                           </div>
                         </div>      
