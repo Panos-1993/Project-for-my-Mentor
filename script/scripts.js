@@ -158,3 +158,61 @@ function myFunctionQuickRatio() {
           myFunctionQuickRatio();
         }
         });}      
+
+        function myFunctionGrossMargin() {
+        var x18, x19;
+        x18 = document.getElementById("GrossProfitGrossMargin").value;
+        x19 = document.getElementById("RevenueGrossMargin").value;
+        console.log(x18 + x19);
+        if (x18 >= 0 && x19 >= 0){
+        var result = (Number(x18) / Number(x19)) / 100;
+        console.log(result);
+        document.getElementById("resultGrossMargin").innerHTML = result;
+        document.getElementById("resultGrossMargin").style.backgroundColor = "green";
+        return result;
+        } else {
+        document.getElementById("resultGrossMargin").style.backgroundColor = "red";  
+        }
+        }
+        var grossMargin = document.getElementById("RevenueGrossMargin");
+        if (grossMargin != null){
+        grossMargin.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
+        myFunctionGrossMargin();
+        }
+        });}    
+        
+        function myFunctionROCE() {
+          var x20, x21, x22;
+          x20 = document.getElementById("Operating Profit").value;
+          x21 = document.getElementById("Non-Current Liabilities").value;
+          x22 = document.getElementById("RevenueROCE").value;
+          console.log(x20 + x21 + x22);
+          var result = (Number(x20) + Number(x21) + Number(x22)) / 100;
+          console.log(result);
+          document.getElementById("resultROCE").innerHTML = result;
+          return result;
+          }
+          var rOCE = document.getElementById("RevenueROCE");
+          rOCE.addEventListener("keydown", function (e) {
+          if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
+          myFunctionROCE();
+          }
+          });
+      
+      function myFunctionROS() {
+          var x23, x24;
+          x23 = document.getElementById("Operating Profit").value;
+          x24 = document.getElementById("RevenueROC").value;
+          console.log(x23 + x24);
+          var result = (Number(x23) + Number(x24)) / 100;
+          console.log(result);
+          document.getElementById("resultROS").innerHTML = result;
+          return result;
+          }
+          var rOS = document.getElementById("RevenueROC");
+          rOS.addEventListener("keydown", function (e) {
+          if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
+          myFunctionROS();
+          }
+          });
